@@ -1,0 +1,161 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+}
+
+.login-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #dbeafe, #eef2ff, #f8fafc);
+}
+
+.login-card {
+    width: 100%;
+    max-width: 420px;
+    padding: 40px 35px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 15px 45px rgba(15, 23, 42, 0.12);
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 22px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #2563eb, #6366f1);
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+h1 {
+    text-align: center;
+    color: #0f172a;
+    font-size: 29px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #64748b;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 9px;
+    color: #334155;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #dbe2ea;
+    border-radius: 10px;
+    outline: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.input-group input::placeholder {
+    color: #94a3b8;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 25px;
+    font-size: 12px;
+}
+
+.remember {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #475569;
+}
+
+.options a,
+.register-text a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.options a:hover,
+.register-text a:hover {
+    text-decoration: underline;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background: #2563eb;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+.register-text {
+    text-align: center;
+    margin-top: 25px;
+    color: #64748b;
+    font-size: 13px;
+}
+
+.footer {
+    margin-top: 28px;
+    padding-top: 20px;
+    border-top: 1px solid #e2e8f0;
+    text-align: center;
+    color: #94a3b8;
+    font-size: 11px;
+}
+
+@media (max-width: 480px) {
+    .login-card {
+        padding: 30px 22px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+}
